@@ -1,4 +1,4 @@
-﻿import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Check, ArrowRight, Shield } from "lucide-react";
 
@@ -19,7 +19,7 @@ const PricingSection = () => {
 
   return (
     <section id="preco" className="py-24 relative" ref={ref}>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/15 blur-[200px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/15 blur-[160px]" />
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
