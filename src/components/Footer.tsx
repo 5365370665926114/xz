@@ -1,4 +1,4 @@
-﻿const Footer = () => {
+const Footer = () => {
   return (
     <footer className="border-t border-border py-12">
       <div className="container mx-auto px-4">
@@ -7,7 +7,7 @@
             <img
               src="/prota-community-logo.png"
               alt="Prota Community"
-              className="h-10 w-auto max-w-[180px] object-contain drop-shadow-[0_8px_24px_rgba(168,85,247,0.18)]"
+              className="h-14 w-auto max-w-[220px] object-contain drop-shadow-[0_12px_32px_rgba(168,85,247,0.32)]"
             />
             <p className="text-xs text-muted-foreground mt-2 text-center sm:text-left">
               Tudo o que você precisa para centralizar, aprender e vender em um só lugar.
