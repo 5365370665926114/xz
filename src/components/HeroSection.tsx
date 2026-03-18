@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRight, Users, Zap, Shield } from "lucide-react";
 
 const HeroSection = () => {
@@ -25,12 +25,27 @@ const HeroSection = () => {
         <Shield className="text-accent" strokeWidth={1.5} />
       </motion.div>
 
-      <div className="container relative z-10 mx-auto px-4 text-center pt-24">
+      <div className="container relative z-10 mx-auto px-4 text-center pt-28">
+        {/* Logo centralizada */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9, y: 10 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-6 flex justify-center"
+        >
+          <img
+            src="/prota-community-logo.png"
+            alt="Prota Community"
+            className="w-[260px] max-w-full drop-shadow-[0_18px_45px_rgba(168,85,247,0.45)]"
+          />
+        </motion.div>
+
+        {/* Badge social proof */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8"
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6"
         >
           <span className="relative flex h-2.5 w-2.5">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
@@ -45,7 +60,7 @@ const HeroSection = () => {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.15 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
           className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight mb-6 leading-[0.95]"
         >
           <span className="block text-foreground">Centralize seus conteúdos,</span>
