@@ -17,9 +17,25 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handler);
-    return () => window.removeEventListener("scroll", handler);
+    let rafId: number | null = null;
+
+    const handler = () => {
+      if (rafId !== null) return;
+
+      rafId = window.requestAnimationFrame(() => {
+        rafId = null;
+        const next = window.scrollY > 20;
+        setScrolled((prev) => (prev === next ? prev : next));
+      });
+    };
+
+    window.addEventListener("scroll", handler, { passive: true });
+    handler();
+
+    return () => {
+      window.removeEventListener("scroll", handler);
+      if (rafId !== null) window.cancelAnimationFrame(rafId);
+    };
   }, []);
 
   return (
