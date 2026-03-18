@@ -65,7 +65,7 @@ const PricingSection = () => {
           </div>
 
           <a
-            href="#preco"
+            href="https://pay.cakto.com.br/753sgq9_809979"
             className="group w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold text-lg animate-pulse-glow hover:glow-purple-intense transition-all duration-300"
           >
             QUERO GARANTIR MEU ACESSO
