@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -33,12 +33,12 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between h-16 px-4 lg:px-8">
+      <div className="container mx-auto flex items-center justify-between h-20 px-4 lg:px-8">
         <a href="#inicio" className="flex items-center" aria-label="Ir para o início">
           <img
             src="/prota-community-logo.png"
             alt="Prota Community"
-            className="h-10 w-auto max-w-[180px] object-contain drop-shadow-[0_8px_24px_rgba(168,85,247,0.18)]"
+            className="h-14 w-auto max-w-[220px] object-contain drop-shadow-[0_12px_32px_rgba(168,85,247,0.32)]"
           />
         </a>
 
