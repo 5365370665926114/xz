@@ -13,7 +13,7 @@ import Footer from "../components/Footer";
 import { MessageCircle } from "lucide-react";
 
 const WHATSAPP_LINK =
-  "https://api.whatsapp.com/send/?phone=5554984150368&text=Ol%C3%A1%2C+tenho+algumas+d%C3%BAvidas+sobre+a+Prota+Community%2C+poderia+me+ajudar%3F&type=phone_number&app_absent=0";
+  "https://api.whatsapp.com/send/?phone=5538998357443&text=Ol%C3%A1%2C+tenho+algumas+d%C3%BAvidas+sobre+a+Prota+Community%2C+poderia+me+ajudar%3F&type=phone_number&app_absent=0";
 
 const Index = () => {
   return (
